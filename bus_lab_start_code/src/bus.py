@@ -27,3 +27,9 @@ class Bus:
         bus_stop.clear()
 
         # passengers with diff destinations going on to different bus
+        # waverly and ocean terminal
+    def diff_dests(self, bus_stop):
+        for person in bus_stop.queue:
+            if person.destination == self.destination:
+                self.pick_up(person)
+        
